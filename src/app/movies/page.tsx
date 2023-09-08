@@ -1,9 +1,9 @@
 "use client";
-import dataJson from "../../data/sample.json";
+import dataJson from "../data/sample.json";
 import { useState } from "react";
-import ModalComp from "../../components/ModalComp";
-import GridComp from "../../components/GridComp";
-import { Items } from "../../types";
+import ModalComp from "../components/ModalComp";
+import GridComp from "../components/GridComp";
+import { Items } from "../types";
 
 const divStyle = {
   backgroundColor: "#414141",
