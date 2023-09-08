@@ -1,9 +1,9 @@
 "use client";
-import dataJson from "../data/sample.json";
+import dataJson from "../../data/sample.json";
 import { useState } from "react";
-import ModalComp from "../components/ModalComp";
-import GridComp from "../components/GridComp";
-import { Items } from "../types";
+import ModalComp from "../../components/ModalComp";
+import GridComp from "../../components/GridComp";
+import { Items } from "../../types";
 
 const divStyle = {
   backgroundColor: "#414141",
@@ -20,7 +20,7 @@ const gridContainer = {
 };
 
 const data = dataJson.entries as Items[];
-const filtered = data
+let filteredJson = data
   .filter((ele) => ele.programType === "movie" && ele.releaseYear >= 2010)
   .sort((a, b) => a.title.localeCompare(b.title))
   .slice(0, 20);
@@ -45,7 +45,7 @@ const MoviesPages = () => {
       <div style={divStyle}>Popular Movies</div>
       <div style={gridContainer}>
         <GridComp
-          filtered={filtered}
+          filtered={filteredJson}
           handleOpen={(movies: Items) => handleOpen(movies)}
         />
         <ModalComp

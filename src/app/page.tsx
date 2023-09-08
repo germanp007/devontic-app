@@ -41,7 +41,7 @@ const Home = () => {
     <main>
       <div style={divStyle}>Popular Titles</div>
       <div style={divContainer}>
-        <Link href="/series" style={{ textDecoration: "none" }}>
+        <Link href="/pages/series" style={{ textDecoration: "none" }}>
           <Card style={cardStyle}>
             <Image
               src={movie}
@@ -53,7 +53,7 @@ const Home = () => {
             SERIES
           </Card>
         </Link>
-        <Link href="/movies" style={{ textDecoration: "none" }}>
+        <Link href="/pages/movies" style={{ textDecoration: "none" }}>
           <Card style={cardStyle}>
             <Image
               src={movie}
