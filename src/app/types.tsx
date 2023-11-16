@@ -1,7 +1,7 @@
 export interface Items {
-  title: string;
-  description: string;
-  programType: string;
+  title: string | null;
+  description: string | null;
+  programType: string | null;
   images: {
     "Poster Art": {
       url: string;
